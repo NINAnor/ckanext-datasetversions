@@ -1,6 +1,6 @@
 {% ckan_extends %}
 
-{% block package_info %}
+ {% block package_info %}
     {{ super() }}
     {% if pkg %}
       {% set versions=h.datasetversions_list(pkg) %}
